@@ -1,0 +1,75 @@
+@import "src/styles";
+
+.container {
+  &__upper {
+    display: flex;
+    padding-top: 3em;
+    padding-bottom: 0;
+  }
+  .page-title {
+    font-size: 3em;
+    margin-top: 0;
+  }
+  &__img-wrapper {
+    flex: 0 0 50%;
+    img {
+      width: 100%;
+    }
+  }
+  &__release-info {
+    padding-left: 3em;
+    p {
+      font-size: 1.5em;
+    }
+    &__links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding-top: 2em;
+      a {
+        width: 10%;
+        img {
+          width: 100%;
+          border-radius: 50%;
+          &:hover {
+            background: $tertiaryFontColor;
+          }
+        }
+        svg {
+          &:hover {
+            fill: $tertiaryFontColor;
+          }
+        }
+      }
+    }
+  }
+  &__lower {
+    margin-bottom: 4em;
+    .page-title {
+      margin-top: 1em;
+    }
+    &__releases {
+      display: flex;
+      flex-wrap: wrap;
+      a {
+        flex: 0 0 20%;
+        margin-right: 2em;
+        text-decoration: none;
+        color: black;
+        font-size: 1.4em;
+        text-align: center;
+        position: relative;
+        &:hover {
+          font-style: italic;
+          top: -2px;
+        }
+        img {
+          width: 100%;
+        }
+        p {
+          margin: 0.2em;
+        }
+      }
+    }
+  }
+}

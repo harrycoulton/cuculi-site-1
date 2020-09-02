@@ -1,0 +1,11 @@
+.container {
+  text-decoration: none;
+  color: inherit;
+  &__title {
+    font-size: 6em;
+  }
+  &__releases {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

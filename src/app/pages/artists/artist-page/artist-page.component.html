@@ -1,0 +1,28 @@
+<div class="container content-padded">
+  <div class="container__upper">
+    <div class="container__img-wrapper">
+      <img src="{{artist.imgSrc}}">
+    </div>
+    <div class="container__artist-info">
+      <h2 class="page-title">{{artist.name}}</h2>
+      <p>{{artist.bio}}</p>
+      <div class="container__artist-info__links">
+        <a *ngFor="let link of artist.links" href="{{link.href}}" target="_blank">
+          <img src="{{link.icon}}">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container__lower">
+    <h2 class="page-title">
+      Releases
+    </h2>
+    <div class="container__lower__releases">
+      <a *ngFor="let release of releases" href="/release/{{release.route}}">
+        <img src="{{release.imgSrc}}">
+        <p class="release-title">{{release.title}}</p>
+        <p class="release-year">{{release.year}}</p>
+      </a>
+    </div>
+  </div>
+</div>

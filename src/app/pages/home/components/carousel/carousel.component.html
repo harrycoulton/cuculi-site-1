@@ -1,0 +1,12 @@
+<div class="container">
+  <owl-carousel-o class="container__carousel" [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let slide of slides">
+      <div class="container__carousel__slide" style="background-image: url( {{slide.imageSrc}} )">
+        <a href="#" class="container__carousel__slide__text">
+          <h2><span>{{slide.heading}}</span></h2>
+          <h3><span>{{slide.subHeading}}</span></h3>
+        </a>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+</div>

@@ -1,0 +1,42 @@
+@import "src/styles";
+
+.container {
+  height: 80vh;
+  position: relative;
+  &__carousel {
+    height: 80vh;
+    &__slide {
+      width: 100%;
+      height: 80vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+      &__text {
+        text-decoration: none;
+        color: $offWhite;
+        position: absolute;
+        left: 20%;
+        bottom: 20%;
+        h2 {
+          font-size: 6em;
+          margin-bottom: 0;
+        }
+        h3 {
+          font-size: 2em;
+        }
+        span {
+          background: $textBgFaded;
+          padding: 0.2em;
+          border-radius: 25px;
+        }
+      }
+      &__text:hover {
+        color: $tertiaryFontColor;
+      }
+    }
+  }
+}
+
+
+

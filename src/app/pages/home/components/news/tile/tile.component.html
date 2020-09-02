@@ -1,0 +1,11 @@
+<a href="{{data.route}}" class="container__tile">
+  <h3 class="container__tile__featured" *ngIf="data.isFeatured">Featured Story</h3>
+  <div class="container__tile__img-wrapper">
+    <img src="{{data.imgSrc}}" alt="{{data.imgDesc}}">
+  </div>
+  <div class="container__tile__text">
+    <h4 class="container__tile__text__head">{{data.heading}}</h4>
+    <p class="container__tile__text__desc">{{data.text}}</p>
+    <p class="container__tile__text__read-more">Read more >></p>
+  </div>
+</a>

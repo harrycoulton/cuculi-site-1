@@ -1,0 +1,8 @@
+<div class="container content-padded">
+  <h2 class="container__title">
+    Releases
+  </h2>
+  <div class="container__releases" data-aos="fade-down">
+    <app-release-tile *ngFor="let release of releases" [release]="release" ></app-release-tile>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+:host {
+  margin-bottom: 2em;
+}
+
+.container__tile {
+  text-decoration: none;
+  color: inherit;
+  &__img-wrapper {
+    width: 90%;
+    img {
+      width: 100%;
+      max-height: 15em;
+      object-fit: cover;
+    }
+  }
+  &__text {
+    &__head {
+
+    }
+    &__desc {
+      width: 75%;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    &__read-more {
+      font-style: italic;
+      color: #666666;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        font-style: normal;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "authors": [
+    "harrycoulton <harry@new-vision.io>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ngtweet": "^1.0.0",
+    "aos": "^2.3.4"
+  }
+}

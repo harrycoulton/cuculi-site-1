@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+$mainFontColor: #000000;
+$secondaryFontColor: #0b1463;
+$tertiaryFontColor: #dabeea;
+$offWhite: #f1f1f1;
+$hoverColor: red;
+
+$textBgMain: rgba(238, 221, 238, 0.67);
+$textBgFaded: rgba(113, 113, 113, 0.6);
+
+$desktopPadding: 5vw;
+$tabletPadding: 2vw;
+$mobilePadding: 1vw;
+
+
+
+* {
+  box-sizing: border-box;
+  font-family: simplifica;
+  letter-spacing: 0.1em;
+}
+
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: simplifica;
+  src: url("assets/fonts/simplifica.ttf");
+}
+
+.content-padded {
+  padding: 0 $desktopPadding;
+}
+
+.owl-dots {
+  position: absolute;
+  right: 20%;
+  bottom: 10%;
+}
+
+.owl-dots span {
+  background: $textBgFaded !important;
+}
+
+.owl-dots .active span {
+  background: $tertiaryFontColor !important;
+}
+

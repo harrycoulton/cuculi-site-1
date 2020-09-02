@@ -1,0 +1,5 @@
+<h2>News</h2>
+
+<div class="container">
+    <app-tile [ngClass]="story.isFeatured ? 'container__featured' : 'container__tile'" [data]="story" *ngFor="let story of stories"></app-tile>
+</div>

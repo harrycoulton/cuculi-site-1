@@ -1,0 +1,13 @@
+@import "src/styles";
+
+.news-twitter {
+  display: flex;
+  margin-top: 3em;
+  padding-left: $desktopPadding;
+  &__news {
+    flex: 0 0 80%;
+  }
+  &__twitter-wrapper {
+    flex: 0 0 20%;
+  }
+}
