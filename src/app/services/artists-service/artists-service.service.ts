@@ -11,6 +11,7 @@ export class ArtistsServiceService {
   constructor() {
     this.artists = [
       {
+        id: 1,
         name: 'Bec Garthwaite',
         bio: 'With tight vocal harmonies at the core, Hands of the Heron weave song-stories of love, loss and magical happenings accompanied by banjo, flute, accordion, clarinet, guitar and anything else they can get their hands on.\n' +
           '\n' +
@@ -44,6 +45,7 @@ export class ArtistsServiceService {
         ]
       },
       {
+        id: 2,
         name: 'Hands of the Heron',
         bio: 'With tight vocal harmonies at the core, Hands of the Heron weave song-stories of love, loss and magical happenings accompanied by banjo, flute, accordion, clarinet, guitar and anything else they can get their hands on.\n' +
           '\n' +
@@ -69,6 +71,7 @@ export class ArtistsServiceService {
         ]
       },
       {
+        id: 3,
         name: 'Beth Roberts',
         bio: 'With tight vocal harmonies at the core, Hands of the Heron weave song-stories of love, loss and magical happenings accompanied by banjo, flute, accordion, clarinet, guitar and anything else they can get their hands on.\n' +
           '\n' +
@@ -94,6 +97,7 @@ export class ArtistsServiceService {
         ]
       },
       {
+        id: 4,
         name: 'Bea Lastname',
         bio: 'With tight vocal harmonies at the core, Hands of the Heron weave song-stories of love, loss and magical happenings accompanied by banjo, flute, accordion, clarinet, guitar and anything else they can get their hands on.\n' +
           '\n' +
@@ -119,6 +123,7 @@ export class ArtistsServiceService {
         ]
       },
       {
+        id: 5,
         name: 'Claire Vine',
         bio: 'With tight vocal harmonies at the core, Hands of the Heron weave song-stories of love, loss and magical happenings accompanied by banjo, flute, accordion, clarinet, guitar and anything else they can get their hands on.\n' +
           '\n' +

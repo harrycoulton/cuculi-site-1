@@ -29,6 +29,8 @@ export class CarouselComponent implements OnInit {
     pullDrag: true,
     dots: true,
     center: true,
+    autoplay: true,
+    autoplayHoverPause: true,
     navSpeed: 700,
     responsive: {
       0: {

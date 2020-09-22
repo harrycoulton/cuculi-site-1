@@ -1,11 +1,11 @@
-<div class="container content-padded">
+<div class="container content-padded" data-aos="fade-in" data-aos-delay="250">
   <div class="container__upper">
     <div class="container__img-wrapper">
       <img src="{{artist.imgSrc}}">
     </div>
     <div class="container__artist-info">
-      <h2 class="page-title">{{artist.name}}</h2>
-      <p>{{artist.bio}}</p>
+      <h2 class="page-title allPage-title">{{artist.name}}</h2>
+      <p class="allPage-para">{{artist.bio}}</p>
       <div class="container__artist-info__links">
         <a *ngFor="let link of artist.links" href="{{link.href}}" target="_blank">
           <img src="{{link.icon}}">
@@ -13,16 +13,38 @@
       </div>
     </div>
   </div>
-  <div class="container__lower">
-    <h2 class="page-title">
-      Releases
-    </h2>
-    <div class="container__lower__releases">
-      <a *ngFor="let release of releases" href="/release/{{release.route}}">
-        <img src="{{release.imgSrc}}">
-        <p class="release-title">{{release.title}}</p>
-        <p class="release-year">{{release.year}}</p>
-      </a>
+  <div class="container__lower" *ngIf="releases.length">
+    <div class="container__lower__releases-wrapper">
+      <h2 class="page-title">
+        Releases
+      </h2>
+      <div class="container__lower__releases">
+        <a *ngFor="let release of releases" href="/release/{{release.route}}">
+          <img src="{{release.imgSrc}}">
+          <p class="release-title">{{release.title}}</p>
+          <p class="release-year">{{release.year}}</p>
+        </a>
+      </div>
+    </div>
+    <div class="container__lower__events-wrapper">
+      <h2 class="page-title">
+        Upcoming Events
+      </h2>
+      <div class="container__lower__events">
+        <div class="container__lower__events__event" *ngFor="let event of events">
+          <div class="container__lower__events__event-wrapper">
+            <div class="container__lower__events__event-info">
+              <h3>{{event.date}}</h3>
+              <h2>{{event.title}}</h2>
+            </div>
+            <div class="container__lower__events__event-links">
+              <a *ngFor="let link of event.links" href="{{link.href}}">
+                <img src="{{link.icon}}">
+              </a>
+          </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

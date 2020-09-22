@@ -23,6 +23,7 @@ import { ArtistTileComponent } from './pages/artists/artist-tile/artist-tile.com
 import { ArtistPageComponent } from './pages/artists/artist-page/artist-page.component';
 import { ReleaseTileComponent } from './pages/releases/release-tile/release-tile.component';
 import { ReleasePageComponent } from './pages/releases/release-page/release-page.component';
+import { UpcomingEventComponent } from './pages/calendar/upcoming-event/upcoming-event.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { ReleasePageComponent } from './pages/releases/release-page/release-page
     ArtistPageComponent,
     ReleaseTileComponent,
     ReleasePageComponent,
+    UpcomingEventComponent,
   ],
   imports: [
     BrowserModule,

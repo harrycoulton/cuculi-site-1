@@ -1,13 +1,36 @@
 @import "src/styles";
+//
+//.news-twitter {
+//  display: flex;
+//  margin-top: 3em;
+//  padding-left: $desktopPadding;
+//  &__news {
+//    flex: 0 0 80%;
+//  }
+//  &__twitter-wrapper {
+//    flex: 0 0 20%;
+//  }
+//}
 
-.news-twitter {
+.container {
   display: flex;
-  margin-top: 3em;
-  padding-left: $desktopPadding;
-  &__news {
+  flex-direction: column;
+  &__info-news {
     flex: 0 0 80%;
+    display: flex;
+    .info-wrapper {
+      background: $textBgMain;
+      flex: 0 0 60%;
+    }
+    .news-wrapper {
+      flex: 0 0 40%;
+      padding-left: 2em;
+    }
   }
-  &__twitter-wrapper {
+  &__feed {
     flex: 0 0 20%;
+    .fb-page {
+      width: 100%;
+    }
   }
 }

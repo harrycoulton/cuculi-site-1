@@ -5,9 +5,9 @@
     display: flex;
     padding-top: 3em;
     padding-bottom: 0;
+    margin-bottom: 2em;
   }
   .page-title {
-      font-size: 3em;
       margin-top: 0;
   }
   &__img-wrapper {
@@ -49,15 +49,19 @@
   }
   &__lower {
     margin-bottom: 4em;
+    display: flex;
     .page-title {
       margin-top: 1em;
+    }
+    &__releases-wrapper {
+      flex: 0 0 60%;
     }
     &__releases {
       display: flex;
       flex-wrap: wrap;
       a {
-        flex: 0 0 20%;
-        margin-right: 2em;
+        flex: 0 0 30%;
+        margin-right: 1%;
         text-decoration: none;
         color: black;
         font-size: 1.4em;
@@ -72,6 +76,33 @@
         }
         p {
           margin: 0.2em;
+        }
+      }
+    }
+    &__events-wrapper {
+      flex: 0 0 40%;
+    }
+    &__events {
+      &__event {
+        border-top: 2px solid black;
+      }
+      &__event-wrapper {
+        display: flex;
+      }
+      &__event-info{
+        flex: 0 0 40%;
+      }
+      &__event-links {
+        flex: 0 0 60%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        a {
+          flex: 0 0 10%;
+          img {
+            height: 2em;
+          }
         }
       }
     }

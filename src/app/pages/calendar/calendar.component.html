@@ -1,1 +1,8 @@
-<p>calendar works!</p>
+<div class="content-padded container">
+  <h2 class="calendar-info allPage-title">
+    Upcoming events
+  </h2>
+  <div class="event-container">
+    <app-upcoming-event *ngFor="let event of events" [eventInfo]="event"></app-upcoming-event>
+  </div>
+</div>
