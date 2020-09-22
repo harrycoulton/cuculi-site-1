@@ -11,3 +11,13 @@
     border-right: 2px solid black;
   }
 }
+
+@media only screen and (max-width: 750px){
+  .container {
+    &__tile {
+      flex: 0 0 100%;
+      padding-right: 1em;
+      border-right: none;
+    }
+  }
+}

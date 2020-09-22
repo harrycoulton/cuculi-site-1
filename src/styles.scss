@@ -33,6 +33,18 @@ body {
   padding: 0 $desktopPadding;
 }
 
+@media only screen and (max-width: 1000px){
+  .content-padded {
+    padding: 0 $tabletPadding;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .content-padded {
+    padding: 0 $mobilePadding;
+  }
+}
+
 .owl-dots {
   position: absolute;
   right: 20%;
