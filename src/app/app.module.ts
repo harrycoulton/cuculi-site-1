@@ -24,6 +24,8 @@ import { ArtistPageComponent } from './pages/artists/artist-page/artist-page.com
 import { ReleaseTileComponent } from './pages/releases/release-tile/release-tile.component';
 import { ReleasePageComponent } from './pages/releases/release-page/release-page.component';
 import { UpcomingEventComponent } from './pages/calendar/upcoming-event/upcoming-event.component';
+import { NewsMainComponent} from './pages/news/news/news-main.component';
+import { NewsPageComponent } from './pages/news/news-page/news-page/news-page.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { UpcomingEventComponent } from './pages/calendar/upcoming-event/upcoming
     ReleaseTileComponent,
     ReleasePageComponent,
     UpcomingEventComponent,
+    NewsMainComponent,
+    NewsPageComponent,
   ],
   imports: [
     BrowserModule,

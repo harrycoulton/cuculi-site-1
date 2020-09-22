@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="container__upper">
+    <div class="container__upper__event-img">
+      <img src="{{eventInfo.eventImg}}">
+    </div>
+    <div class="container__upper__info">
+      <h2>{{eventInfo.date}}</h2>
+      <h2>{{eventInfo.title}}</h2>
+      <h3>Featuring:
+        <span *ngFor="let artist of relatedArtists">
+        {{artist.name}}<span *ngIf="artist == relatedArtists[relatedArtists.length - 1]">.</span>
+        <span *ngIf="artist != relatedArtists[relatedArtists.length - 1] && artist != relatedArtists[relatedArtists.length - 2]">,</span>
+        <span *ngIf="artist == relatedArtists[relatedArtists.length - 2]">, and </span>
+      </span>
+      </h3>
+      <p>{{eventInfo.info}}</p>
+    </div>
+  </div>
+  <div class="container__links">
+    <div class="contaner__links__link" *ngFor="let link of eventInfo.links">
+      <a href="{{link.href}}">
+        <img src="{{link.icon}}">
+      </a>
+    </div>
+  </div>
+</div>

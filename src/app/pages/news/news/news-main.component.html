@@ -1,0 +1,9 @@
+<div class="content-padded">
+  <h2 class="allPage-title">News</h2>
+  <div class="container">
+    <app-tile class="container__featured" [data]="featuredStory" data-aos="fade-up" data-aos-delay="100">
+    </app-tile>
+    <app-tile class="container__tile" [data]="story" *ngFor="let story of stories" data-aos="fade-up" data-aos-delay="200">
+    </app-tile>
+  </div>
+</div>

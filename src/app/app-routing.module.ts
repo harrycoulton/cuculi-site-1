@@ -7,6 +7,8 @@ import {ContactComponent} from './pages/contact/contact.component';
 import {ReleasesComponent} from './pages/releases/releases.component';
 import {ArtistPageComponent} from './pages/artists/artist-page/artist-page.component';
 import {ReleasePageComponent} from './pages/releases/release-page/release-page.component';
+import {NewsMainComponent} from './pages/news/news/news-main.component';
+import {NewsPageComponent} from './pages/news/news-page/news-page/news-page.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -14,8 +16,10 @@ const routes: Routes = [
   {path: 'calendar', component: CalendarComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'releases', component: ReleasesComponent},
+  {path: 'news', component: NewsMainComponent},
   {path: 'artist/:name', component: ArtistPageComponent},
-  {path: 'release/:name', component: ReleasePageComponent}
+  {path: 'release/:name', component: ReleasePageComponent},
+  {path: 'news/:route', component: NewsPageComponent}
 ];
 
 @NgModule({

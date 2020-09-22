@@ -1,4 +1,4 @@
-<app-carousel></app-carousel>
+<app-carousel [featuredStories]="featuredStories"></app-carousel>
 <!--<div class="news-twitter">-->
 <!--  <div class="news-twitter__news">-->
 <!--  </div>-->
@@ -12,8 +12,8 @@
     <div class="content-padded info-wrapper" data-aos="fade-up" data-aos-delay="200">
       <app-about-us></app-about-us>
     </div>
-    <div class="news-wrapper" data-aos="fade-up" data-aos-delay="200">
-      <app-news></app-news>
+    <div class="content-padded news-wrapper" data-aos="fade-up" data-aos-delay="200">
+      <app-news [stories]="stories"></app-news>
     </div>
   </div>
   <div class="container__feed">

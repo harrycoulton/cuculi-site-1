@@ -165,4 +165,7 @@ export class ArtistsServiceService {
   getArtistByName(artistName): ArtistModel[]{
     return this.artists.filter(artist => artist.route === artistName);
   }
+  getArtistById(artistId): ArtistModel[]{
+    return this.artists.filter(artist => artist.id === artistId);
+  }
 }

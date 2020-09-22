@@ -2,15 +2,22 @@
   margin-bottom: 2em;
 }
 
+.displayNone {
+  display: none;
+}
+
 .container__tile {
   text-decoration: none;
   color: inherit;
   &__img-wrapper {
-    width: 90%;
+    width: 100%;
     img {
       width: 100%;
       max-height: 15em;
       object-fit: cover;
+    }
+    .featuredImg {
+      max-height: 20em;
     }
   }
   &__text {
@@ -18,7 +25,7 @@
 
     }
     &__desc {
-      width: 75%;
+      width: 90%;
       font-size: 1.2em;
       overflow: hidden;
       display: -webkit-box;

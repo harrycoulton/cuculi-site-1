@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__featured {
+    width: 100%;
+  }
+  &__tile {
+    flex: 0 0 30%;
+    padding-right: 1em;
+    border-right: 2px solid black;
+  }
+}
