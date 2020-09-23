@@ -18,5 +18,15 @@
       <a routerLink="/calendar" class="container__right__link">Calendar</a>
       <a routerLink="/news" class="container__right__link">News</a>
       <a routerLink="/contact" class="container__right__link">Contact</a>
+      <div class="container__right__hamburger">
+        <a routerLink="{{activeHamburger ? '/mob-nav' : currentRoute }}">
+          <button class="hamburger hamburger--collapse" type="button" (click)="toggleActive()" [ngClass]="activeHamburger ? 'is-active' : ''">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </a>
+      </div>
   </div>
 </div>
+

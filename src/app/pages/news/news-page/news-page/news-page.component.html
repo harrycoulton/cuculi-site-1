@@ -5,6 +5,7 @@
     <div class="container content-padded">
       <div class="container__text">
         <h1 class="container__text__heading">{{story.heading}}</h1>
+        <h2 class="quote-mb">"{{story.quote}}"</h2>
         <p class="container__text__text">{{story.text}}</p>
         <div class="related-stories" *ngIf="relatedStories.length">
           <h2>Related stories</h2>
@@ -16,7 +17,7 @@
       <div class="container__info">
         <div class="container__info__quote" *ngIf="story.quote">
           <h1 class="container__info__quote__text">
-            <h2>"{{story.quote}}"</h2>
+            <h2 class="quote-desk">"{{story.quote}}"</h2>
           </h1>
         </div>
         <div class="container__info__artists" *ngIf="relatedArtists.length">

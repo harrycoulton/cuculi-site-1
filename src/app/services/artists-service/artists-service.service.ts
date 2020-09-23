@@ -23,11 +23,11 @@ export class ArtistsServiceService {
         route: 'becgarthwaite',
         links: [
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/instagram.svg',
+            icon: 'assets/icons/instagramblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
@@ -57,15 +57,15 @@ export class ArtistsServiceService {
         route: 'handsoftheheron',
         links: [
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           }
         ]
@@ -83,15 +83,15 @@ export class ArtistsServiceService {
         route: 'bethroberts',
         links: [
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           }
         ]
@@ -109,15 +109,15 @@ export class ArtistsServiceService {
         route: 'bealastname',
         links: [
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           }
         ]
@@ -135,23 +135,23 @@ export class ArtistsServiceService {
         route: 'clairevine',
         links: [
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           }
         ]

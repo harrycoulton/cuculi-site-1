@@ -16,19 +16,15 @@
         text-decoration: none;
         color: $offWhite;
         position: absolute;
-        left: 20%;
-        bottom: 20%;
+        bottom: 0;
+        width: 100%;
+        background: $textBgFaded;
         h2 {
           font-size: 6em;
           margin-bottom: 0;
         }
         h3 {
           font-size: 2em;
-        }
-        span {
-          background: $textBgFaded;
-          padding: 0.2em;
-          border-radius: 25px;
         }
       }
       &__text:hover {

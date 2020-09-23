@@ -1,3 +1,5 @@
+@import "node_modules/hamburgers/_sass/hamburgers/hamburgers";
+
 /* You can add global styles to this file, and also import other style files */
 $mainFontColor: #000000;
 $secondaryFontColor: #d7eede;
@@ -9,8 +11,8 @@ $textBgMain: rgba(238, 221, 238, 0.67);
 $textBgFaded: rgba(113, 113, 113, 0.6);
 
 $desktopPadding: 5vw;
-$tabletPadding: 2vw;
-$mobilePadding: 1vw;
+$tabletPadding: 2.5vw;
+$mobilePadding: 2vw;
 
 
 

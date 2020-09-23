@@ -18,11 +18,11 @@ export class EventsService {
         info: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut.',
         links: [
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/instagram.svg',
+            icon: 'assets/icons/instagramblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
@@ -40,11 +40,11 @@ export class EventsService {
         info: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut.',
         links: [
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/instagram.svg',
+            icon: 'assets/icons/instagramblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
@@ -62,11 +62,11 @@ export class EventsService {
         info: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut.',
         links: [
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/instagram.svg',
+            icon: 'assets/icons/instagramblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {

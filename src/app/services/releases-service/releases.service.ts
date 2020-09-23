@@ -20,23 +20,23 @@ export class ReleasesService {
         price: '10.50',
          links: [
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           }
         ]
@@ -52,23 +52,23 @@ export class ReleasesService {
         price: '10.50',
          links: [
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           }
         ]
@@ -84,23 +84,23 @@ export class ReleasesService {
         price: '10.50',
          links: [
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           }
         ]
@@ -116,23 +116,23 @@ export class ReleasesService {
         price: '10.50',
         links: [
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           },
           {
-            icon: 'assets/icons/facebook.svg',
+            icon: 'assets/icons/facebookblk.svg',
             href: 'https://www.facebook.com/eccamuse/'
           }
         ]

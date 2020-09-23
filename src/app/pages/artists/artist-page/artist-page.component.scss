@@ -108,3 +108,32 @@
     }
   }
 }
+
+@media only screen and (max-width: 1000px){
+  .content-padded {
+    padding: 0;
+  }
+  .container {
+    &__upper {
+      display: flex;
+      flex-direction: column;
+      padding-top: 0;
+    }
+    .page-title {
+      margin-top: 1em;
+    }
+    &__img-wrapper {
+      flex: 0 0 100%;
+      width: 100%;
+      display: flex;
+      img {
+        max-height: 60em;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    &__artist-info {
+      padding: 0 2vw;
+    }
+  }
+}
