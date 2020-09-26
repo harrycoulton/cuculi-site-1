@@ -1,0 +1,11 @@
+<a routerLink="/news/{{data.route}}" class="container__tile">
+  <h2 class="container__tile__featured" [ngClass]="inPage ? 'displayNone' : ''" *ngIf="data.isFeatured">Featured Story</h2>
+  <div class="container__tile__img-wrapper">
+    <img src="{{data.imgSrc}}" alt="{{data.imgDesc}}" [ngClass]="data.isFeatured === true ? 'featuredImg' : ''">
+  </div>
+  <div class="container__tile__text">
+    <h4 class="container__tile__text__head allPage-subtitle">{{data.heading}}</h4>
+    <p class="container__tile__text__desc">{{data.text}}</p>
+    <p class="container__tile__text__read-more">Read more >></p>
+  </div>
+</a>
