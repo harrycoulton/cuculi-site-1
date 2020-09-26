@@ -12,22 +12,35 @@
   }
   &__img-wrapper {
     padding-bottom: 0;
+    height: 30em;
     img {
       width: 100%;
       height: 30em;
       object-fit: cover;
     }
   }
-  h3 {
-    font-size: 2em;
-    z-index: 3;
-    width: 90%;
-    color: black;
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-    text-decoration: none;
-  }
-  h4 {
+  &__name-wrapper {
+    position: absolute;
+    z-index: 10;
+    bottom: 2em;
+    padding: 1em;
+    background: $textBgFaded;
+    h3 {
+      font-size: 2em;
+      z-index: 3;
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      margin: 0;
+    }
+    h4 {
+      font-size: 1em;
+      z-index: 3;
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      margin: 0;
+    }
   }
 }
 

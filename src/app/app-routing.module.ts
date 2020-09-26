@@ -22,6 +22,7 @@ const routes: Routes = [
   {path: 'artist/:name', component: ArtistPageComponent},
   {path: 'release/:name', component: ReleasePageComponent},
   {path: 'news/:route', component: NewsPageComponent},
+  {path: 'news/:route/news/:route', redirectTo: 'news/:route'},
   {path: 'mob-nav', component: MobNavComponent},
   {path: '**', component: NotFoundComponentComponent}
 ];

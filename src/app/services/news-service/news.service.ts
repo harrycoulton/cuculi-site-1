@@ -11,7 +11,7 @@ export class NewsService {
     this.stories = [
       {
         id: 1,
-        heading: ' News story heading',
+        heading: 'One News story heading',
         text: 'Now this is a story all about how' +
           'My life got flipped turned upside down' +
           'And Id like to take a minute just sit right there' +
@@ -35,7 +35,7 @@ export class NewsService {
       },
       {
         id: 2,
-        heading: 'News story heading',
+        heading: 'Two News story heading',
         text: 'Now this is a story all about how' +
           'My life got flipped turned upside down' +
           'And Id like to take a minute just sit right there' +
@@ -60,7 +60,7 @@ export class NewsService {
       },
       {
         id: 3,
-        heading: 'News story heading',
+        heading: 'Three News story heading',
         text: 'Now this is a story all about how' +
           'My life got flipped turned upside down' +
           'And Id like to take a minute just sit right there' +
@@ -84,7 +84,7 @@ export class NewsService {
       },
       {
         id: 4,
-        heading: 'News story heading',
+        heading: 'Four News story heading',
         text: 'Now this is a story all about how' +
           'My life got flipped turned upside down' +
           'And Id like to take a minute just sit right there' +

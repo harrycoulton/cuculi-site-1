@@ -71,6 +71,10 @@ p {
   letter-spacing: 0.02em;
 }
 
+.display-none {
+  display: none;
+}
+
 @media only screen and (max-width: 1000px){
   .content-padded {
     padding: 0 $tabletPadding;

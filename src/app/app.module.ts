@@ -28,6 +28,7 @@ import { NewsMainComponent} from './pages/news/news/news-main.component';
 import { NewsPageComponent } from './pages/news/news-page/news-page/news-page.component';
 import { MobNavComponent } from './nav/mob-nav/mob-nav/mob-nav.component';
 import { NotFoundComponentComponent } from './pages/not-found-component/not-found-component.component';
+import { NewsTileComponent } from './pages/news/news/news-tile/news-tile.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { NotFoundComponentComponent } from './pages/not-found-component/not-foun
     NewsPageComponent,
     MobNavComponent,
     NotFoundComponentComponent,
+    NewsTileComponent,
   ],
   imports: [
     BrowserModule,
