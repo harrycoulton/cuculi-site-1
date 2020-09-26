@@ -18,12 +18,14 @@ $mobilePadding: 2vw;
 
 * {
   box-sizing: border-box;
-  font-family: simplifica;
-  letter-spacing: 0.1em;
+  font-family: now;
+  letter-spacing: 0em;
 }
 
 body {
   margin: 0;
+  //background-color: #edfaff;
+  background-color: #f5f2ef;
 }
 
 @font-face {
@@ -31,21 +33,16 @@ body {
   src: url("assets/fonts/simplifica.ttf");
 }
 
+@font-face {
+  font-family: now;
+  src: url("assets/fonts/now.otf");
+}
+
 .content-padded {
   padding: 0 $desktopPadding;
 }
 
-@media only screen and (max-width: 1000px){
-  .content-padded {
-    padding: 0 $tabletPadding;
-  }
-}
 
-@media only screen and (max-width: 500px){
-  .content-padded {
-    padding: 0 $mobilePadding;
-  }
-}
 
 .owl-dots {
   position: absolute;
@@ -62,7 +59,7 @@ body {
 }
 
 .allPage-title {
-  font-size: 3em;
+  font-size: 5em;
 }
 
 .allPage-subtitle {
@@ -70,7 +67,22 @@ body {
 }
 
 p {
-  font-family: 'Abel', sans-serif;
+  font-family: now;
   letter-spacing: 0.02em;
+}
+
+@media only screen and (max-width: 1000px){
+  .content-padded {
+    padding: 0 $tabletPadding;
+  }
+  .allPage-title {
+    font-size: 3.5em;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .content-padded {
+    padding: 0 $mobilePadding;
+  }
 }
 

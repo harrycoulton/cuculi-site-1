@@ -1,4 +1,4 @@
-<div class="container content-padded">
+<div class="container content-padded" [ngClass]="activeHamburger ? 'display' : 'display-none'">
   <div class="container__links">
     <a routerLink="artists">artists</a>
     <a routerLink="releases">releases</a>

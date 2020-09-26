@@ -27,6 +27,7 @@ import { UpcomingEventComponent } from './pages/calendar/upcoming-event/upcoming
 import { NewsMainComponent} from './pages/news/news/news-main.component';
 import { NewsPageComponent } from './pages/news/news-page/news-page/news-page.component';
 import { MobNavComponent } from './nav/mob-nav/mob-nav/mob-nav.component';
+import { NotFoundComponentComponent } from './pages/not-found-component/not-found-component.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { MobNavComponent } from './nav/mob-nav/mob-nav/mob-nav.component';
     NewsMainComponent,
     NewsPageComponent,
     MobNavComponent,
+    NotFoundComponentComponent,
   ],
   imports: [
     BrowserModule,

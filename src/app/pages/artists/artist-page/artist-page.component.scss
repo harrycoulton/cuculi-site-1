@@ -119,6 +119,9 @@
       flex-direction: column;
       padding-top: 0;
     }
+    &__lower {
+      flex-direction: column;
+    }
     .page-title {
       margin-top: 1em;
     }

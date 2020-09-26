@@ -1,9 +1,6 @@
 .container {
   text-decoration: none;
   color: inherit;
-  &__title {
-    font-size: 6em;
-  }
   &__artists {
     display: flex;
     flex-wrap: wrap;

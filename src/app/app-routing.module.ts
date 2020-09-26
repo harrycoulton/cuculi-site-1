@@ -10,6 +10,7 @@ import {ReleasePageComponent} from './pages/releases/release-page/release-page.c
 import {NewsMainComponent} from './pages/news/news/news-main.component';
 import {NewsPageComponent} from './pages/news/news-page/news-page/news-page.component';
 import {MobNavComponent} from './nav/mob-nav/mob-nav/mob-nav.component';
+import {NotFoundComponentComponent} from './pages/not-found-component/not-found-component.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path: 'artist/:name', component: ArtistPageComponent},
   {path: 'release/:name', component: ReleasePageComponent},
   {path: 'news/:route', component: NewsPageComponent},
-  {path: 'mob-nav', component: MobNavComponent}
+  {path: 'mob-nav', component: MobNavComponent},
+  {path: '**', component: NotFoundComponentComponent}
 ];
 
 @NgModule({

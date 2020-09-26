@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import { NavigationEnd, Router} from '@angular/router';
+import {NavService} from '../../services/nav-service/nav.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,10 +9,10 @@ import { NavigationEnd, Router} from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
   public activeHamburger = false;
-  public lastRoute: string;
   public currentRoute: string;
 
-  constructor(private router: Router){
+  constructor(private router: Router,
+              private navService: NavService){
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd){
         if (event.url === '/mob-nav') {
@@ -32,5 +33,6 @@ export class NavbarComponent implements OnInit {
       if (this.activeHamburger){
         this.currentRoute = this.router.url;
       }
+      this.navService.updateHamburgerStatus(this.activeHamburger);
   }
 }

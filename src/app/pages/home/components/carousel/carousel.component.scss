@@ -1,7 +1,6 @@
 @import "src/styles";
 
 .container {
-  height: 80vh;
   position: relative;
   &__carousel {
     height: 80vh;
@@ -29,6 +28,34 @@
       }
       &__text:hover {
         color: $tertiaryFontColor;
+      }
+    }
+  }
+}
+
+span {
+  letter-spacing: -0.05em;
+}
+
+@media only screen and (max-width: 1000px){
+  .container {
+    position: relative;
+    &__carousel {
+      height: 100vh;
+      &__slide {
+        height: 80vh;
+        &__text {
+          h2 {
+            font-size: 3.5em;
+            margin-bottom: 0;
+          }
+          h3 {
+            font-size: 2em;
+          }
+        }
+        &__text:hover {
+          color: $tertiaryFontColor;
+        }
       }
     }
   }
