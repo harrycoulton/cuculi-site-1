@@ -6,9 +6,15 @@
     <div class="container__artist-info">
       <h2 class="page-title allPage-title">{{artist.name}}</h2>
       <p class="allPage-para">{{artist.bio}}</p>
+      <div class="container__for-fans-of" *ngIf="artist.forFansOf">
+        <p><span class="container__for-fans-of__tag">For fans of: </span>
+          <span *ngFor="let item of artist.forFansOf">{{item}}<span *ngIf="artist.forFansOf.indexOf(item) !== artist.forFansOf.length - 1">, </span>
+          </span>
+        </p>
+      </div>
       <div class="container__artist-info__links">
-        <a *ngFor="let link of artist.links" href="{{link.href}}" target="_blank">
-          <img src="{{link.icon}}">
+        <a  class="link-icon-wrapper" *ngFor="let link of artist.links" href="{{link.href}}" target="_blank">
+          <fa-icon class="link-icon" [icon]="link.faObj"></fa-icon>
         </a>
       </div>
     </div>

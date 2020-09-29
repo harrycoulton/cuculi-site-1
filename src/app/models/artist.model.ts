@@ -4,9 +4,11 @@ export class ArtistModel {
   public bio: string;
   public imgSrc: string;
   public route: string;
-  public forFansOf?: string;
+  public forFansOf?: string[];
   public links: Array<{
     icon: string;
+    iconId: number;
     href: string;
+    faObj?: object;
   }>;
 }

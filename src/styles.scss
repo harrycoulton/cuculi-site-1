@@ -22,6 +22,10 @@ $mobilePadding: 2vw;
   letter-spacing: 0em;
 }
 
+.simplifica {
+  font-family: simplifica;
+}
+
 body {
   margin: 0;
   //background-color: #edfaff;
@@ -59,7 +63,7 @@ body {
 }
 
 .allPage-title {
-  font-size: 5em;
+  font-size: 4em;
 }
 
 .allPage-subtitle {
@@ -67,7 +71,6 @@ body {
 }
 
 p {
-  font-family: now;
   letter-spacing: 0.02em;
 }
 
@@ -87,6 +90,9 @@ p {
 @media only screen and (max-width: 500px){
   .content-padded {
     padding: 0 $mobilePadding;
+  }
+  .allPage-title {
+    font-size: 2.5em;
   }
 }
 

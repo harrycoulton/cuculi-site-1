@@ -29,6 +29,8 @@ import { NewsPageComponent } from './pages/news/news-page/news-page/news-page.co
 import { MobNavComponent } from './nav/mob-nav/mob-nav/mob-nav.component';
 import { NotFoundComponentComponent } from './pages/not-found-component/not-found-component.component';
 import { NewsTileComponent } from './pages/news/news/news-tile/news-tile.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -62,7 +64,9 @@ import { NewsTileComponent } from './pages/news/news/news-tile/news-tile.compone
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CarouselModule
+    CarouselModule,
+    FontAwesomeModule,
+    // FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -43,11 +43,10 @@ export class CarouselComponent implements OnInit {
   };
   constructor(private artistsService: ArtistsServiceService) {
       const artists = artistsService.getArtists();
-      this.featuredArtist = artists[Math.floor(Math.random() * artists.length)];
+      this.featuredArtist = artistsService.getArtistById(5)[0];
   }
 
   ngOnInit(): void {
-    console.log(this.featuredStories);
     this.slides.push({
       heading: this.featuredArtist.name,
       subHeading: 'Featured Artist',

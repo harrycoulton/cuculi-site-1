@@ -10,3 +10,14 @@
     font-size: 1.5em;
   }
 }
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .img-container img {
+    width: 80vw;
+  }
+}

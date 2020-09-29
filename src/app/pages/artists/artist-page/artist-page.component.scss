@@ -1,5 +1,17 @@
 @import "src/styles";
 
+.link-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-icon {
+  color: black;
+}
+.link-icon:hover {
+  color: #6e607d;
+}
+
 .container {
   &__upper {
     display: flex;
@@ -11,17 +23,17 @@
       margin-top: 0;
   }
   &__img-wrapper {
-    flex: 0 0 40%;
+    flex: 0 0 60%;
     display: flex;
+    align-items: flex-start;
     img {
-      max-height: 40em;
-      max-width: 50em;
-      width: auto;
-      object-fit: cover;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
     }
   }
   &__artist-info {
-    padding-left: 3em;
+    padding: 0 3em;
     p {
       font-size: 1.5em;
     }
@@ -47,9 +59,15 @@
       }
     }
   }
+  &__for-fans-of {
+    &__tag {
+      font-weight: 700;
+    }
+  }
   &__lower {
     margin-bottom: 4em;
     display: flex;
+    padding: 0 3em;
     .page-title {
       margin-top: 1em;
     }
@@ -109,7 +127,7 @@
   }
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1200px){
   .content-padded {
     padding: 0;
   }
@@ -133,6 +151,7 @@
         max-height: 60em;
         max-width: 100%;
         width: 100%;
+        object-fit: contain;
       }
     }
     &__artist-info {
@@ -140,3 +159,21 @@
     }
   }
 }
+
+.link-icon {
+  font-size: 5em;
+}
+
+@media only screen and (max-width: 750px){
+  .container {
+    &__lower {
+      &__events {
+        &__event-wrapper {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+

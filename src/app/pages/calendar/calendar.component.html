@@ -4,5 +4,8 @@
   </h2>
   <div class="event-container">
     <app-upcoming-event *ngFor="let event of events" [eventInfo]="event"></app-upcoming-event>
+    <div class="container__sorry" *ngIf="!events.length">
+      <h2 class="allPage-subtitle">No events are currently planned.. watch this space</h2>
+    </div>
   </div>
 </div>
