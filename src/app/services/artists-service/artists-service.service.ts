@@ -20,6 +20,7 @@ export class ArtistsServiceService {
           'Cosmo Sheldrake', 'Sam Lee', 'Mountain Man', 'Lankum'
         ],
         route: 'anonymous-they',
+        isFeatured: true,
         links: [
           {
             icon: 'facebook',
@@ -45,6 +46,7 @@ export class ArtistsServiceService {
           'Jackson C. Franke',
         ],
         route: 'bea',
+        isFeatured: false,
         links: [
           {
             icon: 'facebook',
@@ -66,6 +68,7 @@ export class ArtistsServiceService {
         forFansOf: ['Vashti Bunyan', 'Rachel Sermanni', 'Radiohead', 'Laura Marling'
         ],
         route: 'bec-garthwaite',
+        isFeatured: false,
         links: [
           {
             icon: 'facebook',
@@ -91,6 +94,7 @@ export class ArtistsServiceService {
         ],
         imgSrc: 'assets/images/artists/artists-new/bethrowan.jpg',
         route: 'bethany-roberts-rowan-elliott',
+        isFeatured: false,
         links: [
           {
             icon: 'facebook',
@@ -101,6 +105,16 @@ export class ArtistsServiceService {
             icon: 'soundcloud',
             iconId: 3,
             href: 'https://soundcloud.com/bethanymroberts/sets/bethany-roberts-rowan-elliott'
+          },
+          {
+            icon: 'youtube',
+            iconId: 7,
+            href: 'https://www.youtube.com/watch?v=52ce-p6eBT4'
+          },
+          {
+            icon: 'instagram',
+            iconId: 2,
+            href: 'https://www.instagram.com/bethanymroberts'
           }
         ]
       },
@@ -116,6 +130,7 @@ export class ArtistsServiceService {
           'WOOM',
         ],
         route: 'hands-of-the-heron',
+        isFeatured: true,
         links: [
           {
             icon: 'facebook',
@@ -145,16 +160,27 @@ export class ArtistsServiceService {
         ]
       },
       {
-        id: 5,
+        id: 6,
         name: 'HOUSE OF FIGS',
-        bio: 'House of Figs is a spell-casting, storm-calming collaboration between poet Beth Calverley (Poetry Machine) and composer/producer Bethany Roberts. Ideas that begin as conversations over cups of tea find their way into conjured words poured into Beth’s typewriter as Bethany improvises loops of banjo, violin, voice and piano. Each ‘spoken song’ is shaped and honed until the layers weave seamlessly together to create a sanctuary for patient, persuasive words expressing their shared gratitude for every day wonders. They are recording an EP this autumn to celebrate Beth Calverley’s debut published collection ‘Brave Faces & Other Smiles’, out in November on Verve Poetry Press.',
+        bio: 'House of Figs is a storm-calming collaboration between poet Beth Calverley (The Poetry Machine) and composer/producer Bethany Roberts. Ideas that begin as conversations over cups of tea find their way into conjured words poured into Beth’s typewriter as Bethany improvises loops of banjo, violin, voice and piano. Each ‘spoken song’ is honed until the layers weave seamlessly together to create a sanctuary for patient words expressing their shared gratitude for every day wonders. They are recording an EP this autumn to celebrate Beth Calverley’s debut published collection Brave Faces & Other Smiles, out in November with Verve Poetry Press.',
         imgSrc: 'assets/images/artists/artists-new/houseoffigs.jpg',
         route: 'house-of-figs',
+        isFeatured: false,
         links: [
           {
             icon: 'soundcloud',
             iconId: 3,
             href: 'https://soundcloud.com/bethanymroberts/love-letter-to-the-nhs-house-of-figs'
+          },
+          {
+            icon: 'facebook',
+            iconId: 1,
+            href: 'https://www.facebook.com/ThePoetryMachineUK/'
+          },
+          {
+            icon: 'instagram',
+            iconId: 2,
+            href: 'https://www.instagram.com/poetrymachine/'
           }
         ]
       }
@@ -169,5 +195,8 @@ export class ArtistsServiceService {
   }
   getArtistById(artistId): ArtistModel[]{
     return this.artists.filter(artist => artist.id === artistId);
+  }
+  getFeaturedArtists(): ArtistModel[] {
+    return this.artists.filter(artist => artist.isFeatured === true);
   }
 }

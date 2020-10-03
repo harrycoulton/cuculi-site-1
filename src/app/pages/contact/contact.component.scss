@@ -1,5 +1,5 @@
 .container {
-  background-image: url("../../../assets/icons/cuculilogo.png");
+  background-image: url("../../../assets/icons/logoalt.png");
   background-position: center;
   background-repeat: no-repeat;
   &__contact {
@@ -10,6 +10,9 @@
       align-items: flex-start;
       justify-content: center;
       flex-direction: column;
+      h3 {
+        font-size: 1.6em !important;
+      }
     }
     &__form {
       flex: 0 0 50%;

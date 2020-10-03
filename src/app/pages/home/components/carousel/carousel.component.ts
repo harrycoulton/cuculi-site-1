@@ -10,7 +10,7 @@ import {StoryModel} from '../../../../models/story.model';
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent implements OnInit {
-  protected featuredArtist: ArtistModel;
+  protected featuredArtists: ArtistModel[];
   @Input() featuredStories: StoryModel[];
 
   slides = [];
@@ -20,7 +20,7 @@ export class CarouselComponent implements OnInit {
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
-    dots: true,
+    dots: false,
     center: true,
     autoplay: true,
     autoplayHoverPause: true,
@@ -43,26 +43,29 @@ export class CarouselComponent implements OnInit {
   };
   constructor(private artistsService: ArtistsServiceService) {
       const artists = artistsService.getArtists();
-      this.featuredArtist = artistsService.getArtistById(5)[0];
+      this.featuredArtists = artistsService.getFeaturedArtists();
   }
 
   ngOnInit(): void {
-    this.slides.push({
-      heading: this.featuredArtist.name,
-      subHeading: 'Featured Artist',
-      imageSrc: this.featuredArtist.imgSrc,
-      link: 'artist/' + this.featuredArtist.route
-    });
-    const topTwoFeaturedStories = [];
-    topTwoFeaturedStories.push(this.featuredStories[0], this.featuredStories[1] ?? this.featuredStories[1]);
-    topTwoFeaturedStories.forEach(story => {
+    this.featuredArtists.forEach(artist => {
       this.slides.push({
-        heading: story.heading,
-        subHeading: story.quote ? story.quote : 'Click here to find out more',
-        imageSrc: story.imgSrc,
-        link: story.route
+        heading: artist.name,
+        subHeading: 'Featured Artist',
+        imageSrc: artist.imgSrc,
+        link: 'artist/' + artist.route
       });
     });
+    // Leaving this feature in comments as will probably be wanted in the future
+    // const topTwoFeaturedStories = [];
+    // topTwoFeaturedStories.push(this.featuredStories[0], this.featuredStories[1] ?? this.featuredStories[1]);
+    // topTwoFeaturedStories.forEach(story => {
+    //   this.slides.push({
+    //     heading: story.heading,
+    //     subHeading: story.quote ? story.quote : 'Click here to find out more',
+    //     imageSrc: story.imgSrc,
+    //     link: story.route
+    //   });
+    // });
   }
 
 }

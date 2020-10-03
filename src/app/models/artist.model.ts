@@ -5,6 +5,7 @@ export class ArtistModel {
   public imgSrc: string;
   public route: string;
   public forFansOf?: string[];
+  public isFeatured: boolean;
   public links: Array<{
     icon: string;
     iconId: number;

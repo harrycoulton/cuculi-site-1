@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {faBandcamp, faFacebook, faInstagram, faSoundcloud, faSpotify} from '@fortawesome/free-brands-svg-icons';
+import {faBandcamp, faFacebook, faInstagram, faSoundcloud, faSpotify, faYoutube} from '@fortawesome/free-brands-svg-icons';
 import {faChrome} from '@fortawesome/free-brands-svg-icons/faChrome';
 
 @Injectable({
@@ -18,9 +18,19 @@ export class IconsService {
       faObj: faInstagram
     },
     {
+      platform: 'soundCloud',
+      iconId: 3,
+      faObj: faSoundcloud
+    },
+    {
       platform: 'bandcamp',
       iconId: 4,
       faObj: faBandcamp
+    },
+    {
+      platform: 'website',
+      iconId: 5,
+      faObj: faChrome
     },
     {
       platform: 'spotify',
@@ -28,15 +38,10 @@ export class IconsService {
       faObj: faSpotify
     },
     {
-      platform: 'soundCloud',
-      iconId: 3,
-      faObj: faSoundcloud
-    },
-    {
-      platform: 'website',
-      iconId: 5,
-      faObj: faChrome
-    },
+      platform: 'youtube',
+      iconId: 7,
+      faObj: faYoutube
+    }
   ];
 
   constructor() { }

@@ -12,10 +12,23 @@
   color: #6e607d;
 }
 
+.artist-title-responsive {
+  display: none;
+}
+
+.dk-title {
+  margin: 0.5em 0;
+}
+
+.artist-desc {
+  margin-top: 0 !important;
+}
+
+
 .container {
   &__upper {
     display: flex;
-    padding-top: 3em;
+    padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 2em;
   }
@@ -128,6 +141,12 @@
 }
 
 @media only screen and (max-width: 1200px){
+  .dk-title {
+   display: none;
+  }
+  .artist-title-responsive {
+    display: block;
+  }
   .content-padded {
     padding: 0;
   }

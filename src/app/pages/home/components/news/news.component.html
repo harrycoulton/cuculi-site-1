@@ -1,5 +1,7 @@
 <h2 class="allPage-title" id="news-title">News</h2>
 
 <div class="container">
-    <app-tile [ngClass]="story.isFeatured ? 'container__featured' : 'container__tile'" [data]="story" *ngFor="let story of stories" data-aos="fade-up"></app-tile>
+  <div *ngFor="let story of stories" data-aos="fade-up">
+    <app-tile *ngIf="story.isFeatured" [ngClass]="story.isFeatured ? 'container__featured' : 'container__tile'" [data]="story"></app-tile>
+  </div>
 </div>
