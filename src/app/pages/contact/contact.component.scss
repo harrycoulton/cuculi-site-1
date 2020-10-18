@@ -1,3 +1,5 @@
+@import "src/styles";
+
 .container {
   background-image: url("../../../assets/icons/logoalt.png");
   background-position: center;
@@ -17,6 +19,23 @@
     &__form {
       flex: 0 0 50%;
       display: flex;
+    }
+  }
+  &__links {
+    width: 50%;
+    display: flex;
+    .link-icon-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .link-icon {
+      color: black;
+      font-size: 5em;
+      margin-right: 1.5em;
+    }
+    .link-icon:hover {
+      color: #6e607d;
     }
   }
 }

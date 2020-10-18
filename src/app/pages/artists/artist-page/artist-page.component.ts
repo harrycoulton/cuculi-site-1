@@ -35,7 +35,6 @@ export class ArtistPageComponent implements OnInit {
     this.artist.links.forEach(link => {
       link.faObj = this.iconsService.getIconById(link.iconId);
     });
-    console.log(this.artist);
   }
 
   ngOnInit(): void {

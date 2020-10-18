@@ -3,8 +3,7 @@
     <ng-template carouselSlide *ngFor="let slide of slides">
       <div class="container__carousel__slide" style="background-image: url({{slide.imageSrc}})">
         <a routerLink="{{slide.link}}" class="container__carousel__slide__text content-padded">
-          <h2><span>{{slide.heading}}</span></h2>
-          <h3><span>{{slide.subHeading}}</span></h3>
+            <h2>{{slide.heading}}</h2>
         </a>
       </div>
     </ng-template>

@@ -19,6 +19,5 @@ export class UpcomingEventComponent implements OnInit {
       const relatedArtist = this.artistsService.getArtistById(id)[0];
       this.relatedArtists.push(relatedArtist);
     });
-    console.log(this.relatedArtists);
   }
 }

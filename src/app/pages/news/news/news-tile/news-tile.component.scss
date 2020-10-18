@@ -9,6 +9,12 @@
 .container__tile {
   text-decoration: none;
   color: inherit;
+  &:hover{
+    color: #8ce0e5;
+  }
+  &__featured {
+    color: black !important;
+  }
   &__img-wrapper {
     width: 100%;
     img {
@@ -23,7 +29,7 @@
   }
   &__text {
     &__head {
-
+      margin: 0.2em 0;
     }
     &__desc {
       width: 90%;
@@ -32,6 +38,7 @@
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
+      display: none;
     }
     &__read-more {
       font-style: italic;

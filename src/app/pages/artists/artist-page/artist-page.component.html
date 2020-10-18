@@ -8,7 +8,7 @@
     </div>
     <div class="container__artist-info">
       <h2 class="page-title allPage-title artist-title-responsive">{{artist.name}}</h2>
-      <p class="allPage-para artist-desc">{{artist.bio}}</p>
+      <p class="allPage-para artist-desc" [innerHTML]="artist.bio"></p>
       <div class="container__for-fans-of" *ngIf="artist.forFansOf">
         <p><span class="container__for-fans-of__tag">For fans of: </span>
           <span *ngFor="let item of artist.forFansOf">{{item}}<span *ngIf="artist.forFansOf.indexOf(item) !== artist.forFansOf.length - 1">, </span>

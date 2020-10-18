@@ -22,7 +22,6 @@ export class ReleasePageComponent implements OnInit {
       this.releaseRoute = params.name;
     });
     this.release = releasesService.getReleaseByRoute(this.releaseRoute);
-    console.log(this.release);
   }
 
   ngOnInit(): void {

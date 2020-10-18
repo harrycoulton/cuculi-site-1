@@ -8,4 +8,9 @@
 <!--&lt;!&ndash;      <img src="assets/icons/cuculilogo.png">&ndash;&gt;-->
 <!--    </div>-->
   </div>
+  <div class="container__links">
+    <a  class="links-icon-wrapper" *ngFor="let link of links" href="{{link.link}}" target="_blank">
+      <fa-icon class="link-icon" [icon]="link.icon"></fa-icon>
+    </a>
+  </div>
 </div>
