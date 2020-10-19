@@ -23,6 +23,9 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .container__heading {
+    font-size: 2.2em;
+  }
   .img-container img {
     width: 80vw;
   }

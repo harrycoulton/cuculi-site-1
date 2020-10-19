@@ -96,7 +96,7 @@ export class ArtistsServiceService {
         ],
         imgSrc: 'assets/images/artists/artists-new/bethrowan2.jpg',
         route: 'bethany-roberts-rowan-elliott',
-        isFeatured: false,
+        isFeatured: true,
         links: [
           {
             icon: 'facebook',
@@ -116,7 +116,7 @@ export class ArtistsServiceService {
           {
             icon: 'instagram',
             iconId: 2,
-            href: 'https://www.instagram.com/bethanymroberts'
+            href: 'http://instagram.com/bethany.m.roberts'
           }
         ]
       },
@@ -126,8 +126,8 @@ export class ArtistsServiceService {
         bio: '<p>Hands of the Heron are a songwriters’ collective from Bristol, UK. Best known for their distinctive multilayered vocal harmonies, their shapeshifting ' +
           'sound draws from an eclectic pool of influence including contemporary alt-folk, polyphonic choral music, 60s-era psychedelia, and cinematic minimalism. </p>' +
           '' +
-          '<p>Their highly anticipated second album will be released during winter 2020, and features songwriting from BEA, Anonymous They, Bec Garthwaite and Bethany ' +
-          'Roberts, all cocooned within an immersive sonic landscape that listeners can lose themselves in.</p>',
+          '<p>Their highly anticipated second album will be released in early 2021, and features songwriting from BEA, Anonymous They, Bec Garthwaite ' +
+          'and Bethany Roberts with dreamy electric guitar from Tom Yates, all cocooned within an immersive sonic landscape that listeners can lose themselves in.</p>',
         imgSrc: 'assets/images/artists/artists-new/handsoftheheron.jpg',
         forFansOf: [
           'The Staves',
@@ -176,7 +176,7 @@ export class ArtistsServiceService {
         imgSrc: 'assets/images/artists/artists-new/houseoffigs.jpg',
         route: 'house-of-figs',
         forFansOf: ['Simon & Garfunkel', 'Alabaster DePlume', 'Kae Tempest', 'Joni Mitchell'],
-        isFeatured: false,
+        isFeatured: true,
         links: [
           {
             icon: 'soundcloud',
