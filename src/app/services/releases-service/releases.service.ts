@@ -8,41 +8,53 @@ export class ReleasesService {
   public releases: Array<ReleaseModel>;
 
   constructor() {
-    this.releases = [];
-    // this.releases = [
-    //   {
-    //     id: 1,
-    //     artist: 'Bec Garthwaite',
-    //     title: 'Album name',
-    //     year: '2018',
-    //     imgSrc: 'assets/images/album.jpg',
-    // tslint:disable-next-line:max-line-length
-    //     info: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?',
-    //     route: 'albumname1',
-    //     price: '10.50',
-    //      links: [
-    //       {
-    //         icon: 'assets/icons/facebookblk.svg',
-    //         href: 'https://www.facebook.com/eccamuse/'
-    //       },
-    //       {
-    //         icon: 'assets/icons/facebookblk.svg',
-    //         href: 'https://www.facebook.com/eccamuse/'
-    //       },
-    //       {
-    //         icon: 'assets/icons/facebookblk.svg',
-    //         href: 'https://www.facebook.com/eccamuse/'
-    //       },
-    //       {
-    //         icon: 'assets/icons/facebookblk.svg',
-    //         href: 'https://www.facebook.com/eccamuse/'
-    //       },
-    //       {
-    //         icon: 'assets/icons/facebookblk.svg',
-    //         href: 'https://www.facebook.com/eccamuse/'
-    //       }
-    //     ]
-    //   },
+    this.releases = [
+      {
+        id: 1,
+        artist: 'Hands of the Heron',
+        title: 'Moonbloom',
+        year: '2020',
+        imgSrc: 'assets/images/moonbloom.jpeg',
+        info: 'On Friday 20 November, Bristol-based alt-folk songwriters\' collective Hands of the Heron released bewitching single \'Moonbloom\' on Cuculi' +
+          ' Records. It\'s the first single from their second album 13 Moons, due to be released in the new year. The track is accompanied by a cinematic ' +
+          'video by filmmaker Tamsin Elliott (From The Coop) featuring dancer Bea Cathro-Wears.',
+        route: 'moonbloom',
+        price: '1',
+         links: [
+           {
+             icon: 'bandcamp',
+             iconId: 4,
+             href: 'https://handsoftheheron.bandcamp.com/track/moonbloom-single'
+           },
+           {
+             icon: 'spotify',
+             iconId: 6,
+             href: 'https://open.spotify.com/track/6NbOeSTDN8QbtKcKbYNYdC?si=uGogWJ0kQym-5OBpSDrVdA'
+           },
+        ],
+        relatedArtists: []
+      },
+      {
+        id: 2,
+        artist: 'Bethany Roberts & Rowan Elliott',
+        title: 'Brambles',
+        year: '2020',
+        imgSrc: 'assets/images/brambes.png',
+        info: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo ' +
+          'inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, ' +
+          'sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet',
+        route: 'brambles',
+        price: '10.50',
+        links: [
+          {
+            icon: 'bandcamp',
+            iconId: 4,
+            href: 'https://cuculirecords.bandcamp.com/releases'
+          },
+        ],
+        relatedArtists: []
+      }
+      ];
     //   {
     //     id: 2,
     //     artist: 'Bec Garthwaite',

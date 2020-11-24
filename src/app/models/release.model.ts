@@ -7,5 +7,11 @@ export class ReleaseModel {
   info: string;
   route: string;
   price: string;
-  links: Array<{icon: string, href: string; }>;
+  public links: Array<{
+    icon: string;
+    iconId: number;
+    href: string;
+    faObj?: object;
+  }>;
+  relatedArtists: number[];
 }

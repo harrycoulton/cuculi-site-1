@@ -39,6 +39,7 @@
     flex: 0 0 60%;
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
     img {
       width: 100%;
       height: auto;
@@ -56,7 +57,7 @@
       justify-content: space-around;
       padding-top: 2em;
       a {
-        width: 10%;
+        width: 8%;
         img {
           width: 100%;
           border-radius: 50%;
@@ -132,7 +133,7 @@
         a {
           flex: 0 0 10%;
           img {
-            height: 2em;
+            height: 1.5em;
           }
         }
       }
@@ -170,7 +171,7 @@
         max-height: 60em;
         max-width: 100%;
         width: 100%;
-        object-fit: contain;
+        object-fit: cover;
       }
     }
     &__artist-info {
@@ -180,10 +181,13 @@
 }
 
 .link-icon {
-  font-size: 5em;
+  font-size: 4em;
 }
 
 @media only screen and (max-width: 750px){
+  .link-icon {
+    font-size: 3em;
+  }
   .container {
     &__lower {
       &__events {

@@ -64,7 +64,7 @@ export class ArtistsServiceService {
         id: 3,
         name: 'BEC GARTHWAITE',
         bio: '<p>Bec Garthwaite pours an innately detailed craftsmanship into her songwriting. Her fingerpicked guitar strings construct a cat’s cradle in which her gentle, defiant voice can unfold itself, syllable by syllable, note by deliberate note. There’s a sense of wry melancholy in her dreamlike sound, as though she has looked right into the kaleidoscope and needs to tell us, with quiet assurance and lyrical poetry, what she saw between the lines.</p>',
-        imgSrc: 'assets/images/artists/artists-new/becgarthwaite.jpg',
+        imgSrc: 'assets/images/artists/artists-new/becgarthwaite2.jpg',
         forFansOf: ['Vashti Bunyan', 'Leonard Cohen', 'Bedouine', 'Laura Marling'
         ],
         route: 'bec-garthwaite',
@@ -128,7 +128,7 @@ export class ArtistsServiceService {
           '' +
           '<p>Their highly anticipated second album will be released in early 2021, and features songwriting from BEA, Anonymous They, Bec Garthwaite ' +
           'and Bethany Roberts with dreamy electric guitar from Tom Yates, all cocooned within an immersive sonic landscape that listeners can lose themselves in.</p>',
-        imgSrc: 'assets/images/artists/artists-new/handsoftheheron.jpg',
+        imgSrc: 'assets/images/artists/artists-new/hoth2020.jpg',
         forFansOf: [
           'The Staves',
           'Fleet Foxes',
