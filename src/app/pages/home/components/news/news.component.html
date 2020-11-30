@@ -2,6 +2,6 @@
 
 <div class="container">
   <div *ngFor="let story of stories" data-aos="fade-up">
-    <app-tile *ngIf="story.isFeatured" [ngClass]="story.isFeatured ? 'container__featured' : 'container__tile'" [data]="story"></app-tile>
+    <app-tile class="container__featured" [data]="story"></app-tile>
   </div>
 </div>
