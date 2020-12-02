@@ -1,6 +1,6 @@
 export class ReleaseModel {
   id: number;
-  artist: string;
+  artist: number;
   title: string;
   year?: string;
   imgSrc: string;

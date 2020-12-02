@@ -30,6 +30,7 @@ import { MobNavComponent } from './nav/mob-nav/mob-nav/mob-nav.component';
 import { NotFoundComponentComponent } from './pages/not-found-component/not-found-component.component';
 import { NewsTileComponent } from './pages/news/news/news-tile/news-tile.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LoginPageComponent } from './backend/login/login-page/login-page.component';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
@@ -59,6 +60,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MobNavComponent,
     NotFoundComponentComponent,
     NewsTileComponent,
+    LoginPageComponent,
   ],
   imports: [
     BrowserModule,

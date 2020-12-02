@@ -4,6 +4,8 @@ import {ReleasesService} from '../../../services/releases-service/releases.servi
 import {ActivatedRoute} from '@angular/router';
 import {Subscription} from 'rxjs';
 import {IconsService} from '../../../services/icons-service/icons.service';
+import {ArtistModel} from '../../../models/artist.model';
+import {ReleaseModel} from '../../../models/release.model';
 
 @Component({
   selector: 'app-release-page',
@@ -12,9 +14,10 @@ import {IconsService} from '../../../services/icons-service/icons.service';
 })
 export class ReleasePageComponent implements OnInit {
   public info;
-  public release;
+  public release: ReleaseModel;
   public releaseRoute;
   public links;
+  public artist: ArtistModel;
   private routeSub: Subscription;
 
   constructor(private artistsService: ArtistsServiceService,
@@ -28,6 +31,7 @@ export class ReleasePageComponent implements OnInit {
     this.release.links.forEach(link => {
       link.faObj = this.iconsService.getIconById(link.iconId);
     });
+    this.artist = this.artistsService.getArtistById(this.release.artist)[0];
   }
 
   ngOnInit(): void {

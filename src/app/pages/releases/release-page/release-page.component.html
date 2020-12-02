@@ -30,7 +30,9 @@
     </div>
     <div class="container__artist-info">
       <h2 class="page-title allPage-title artist-title-responsive" style="margin-bottom: 0.5em">{{release.title}}</h2>
-      <h1 class="dk-title artist-title-responsive" style="margin-bottom: 1em">{{release.artist}}</h1>
+      <h1 class="dk-title artist-title-responsive" style="margin-bottom: 1em">
+        <a class="artist-link" style="text-decoration: none" routerLink="/artist/{{this.artist.route.toLowerCase()}}">{{this.artist.name}}</a>
+      </h1>
       <p class="allPage-para artist-desc" [innerHTML]="release.info"></p>
       <div class="container__artist-info__links">
         <a  class="link-icon-wrapper" *ngFor="let link of release.links" href="{{link.href}}" target="_blank">
